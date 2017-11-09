@@ -7,7 +7,7 @@ tags: [Android, DataBinding, FindViewById]
 description: 안드로이드 DataBinding - 기본
 ---
 
-# 안드로이드 데이터(View / ViewGroup)를 변수에 바인딩 하는 방법 - 기본편!!
+# 안드로이드 데이터(View / ViewGroup)를 변수에 바인딩 하는 방법 - 기본편!!!
 
 아래는 테스트로 작성한 XML 입니다.
 
