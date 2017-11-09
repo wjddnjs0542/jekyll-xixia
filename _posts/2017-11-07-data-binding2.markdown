@@ -13,19 +13,19 @@ description: 안드로이드 DataBinding
 
     App 디렉터리 밑 Gradle에 다음과 같이 dataBinding을 사용하기 위한 준비를 한다.
 
-    ```
+    {% highlight gradle %}
     android {
         dataBinding {
             enabled = true
         }
     }
-    ```
+    {% endhighlight %}
 
 2. XML의 최상위를 layout 태그로 감싸준다.
 
     아래는 테스트로 작성한 XML 입니다.
 
-    ``` XML
+    {% highlight xml %}
     <layout
         xmlns:android="http://schemas.android.com/apk/res/android">
 
@@ -42,28 +42,27 @@ description: 안드로이드 DataBinding
         </LinearLayout>
 
     </layout>
-    ```
+    {% endhighlight %}
 
 3. 알아서 Binding 해주는 객체를 받아 사용한다.
 
     아래는 테스트로 작성한 Activity 코드 중 onCreate 부분입니다.
 
-    ``` Java
+    {% highlight java %}
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         ActivityBindingTextBinding binding = DataBindingUtil.setContentView(this, R.layout.activity_binding_test);
         binding.textView.setText("텍스트뷰");
     }
-
-    ```
+    {% endhighlight %}
 
 이때 알아서 Binding 되는 객체의 클래스 명은 작성한 xml 이름과 같다.
 ※ 중간에 _ 기호가 들어가 있으면 다음 알파벳은 대문자가 된다 [파스칼 표기법]
 
 아래 FindViewById를 사용하여 데이터 바인딩을 사용했을 때보다 훨씬 코드가 간결한 볼 수 있다.
 
-``` Java
+{% highlight java %}
 @Override
 protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
@@ -72,4 +71,4 @@ protected void onCreate(Bundle savedInstanceState) {
     TextView textView = (TextView) findViewById(R.id.text_view);
     textView.setText("텍스트뷰");
 }
-```
+{% endhighlight %}

@@ -26,20 +26,19 @@ description: 안드로이드 DataBinding - 기본
 
 아래는 테스트로 작성한 Activity 코드 중 onCreate 부분입니다.
 
-``` Java
+{% highlight java %}
 @Override
 protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_binding_test);
 }
-
-```
+{% endhighlight %}
 
 onCreate 의 setContentView 이후
 
 즉 Activity에 XML layout이 붙었을 경우 작성.
 
-``` Java
+{% highlight java %}
 @Override
 protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
@@ -47,6 +46,6 @@ protected void onCreate(Bundle savedInstanceState) {
     LinearLayout linearLayout = (LinearLayout) findViewById(R.id.linear_layout);
     TextView textView = (TextView) findViewById(R.id.text_view);
 }
-```
+{% endhighlight %}
 
 
