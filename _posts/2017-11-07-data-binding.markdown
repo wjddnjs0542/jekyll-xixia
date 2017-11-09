@@ -11,7 +11,7 @@ description: 안드로이드 DataBinding - 기본
 
 아래는 테스트로 작성한 XML 입니다.
 
-``` XML
+{% highlight xml %}
 <LinearLayout
     android:id="@+id/linear_layout"
     android:layout_width="match_parent"
@@ -22,7 +22,7 @@ description: 안드로이드 DataBinding - 기본
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
 </LinearLayout>
-```
+{% endhighlight %}
 
 아래는 테스트로 작성한 Activity 코드 중 onCreate 부분입니다.
 
