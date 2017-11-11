@@ -10,7 +10,7 @@ tag: [Android, JodaTime, Joda]
 
 - Java의 Date 와 Calendar 클래스의 불편함을 해소하기 위해 나온 라이브러리
 
-[https://github.com/dlew/joda-time-android]
+[ruby-gems]: https://github.com/dlew/joda-time-android
 
 ## Android 사용방법
 
