@@ -37,3 +37,7 @@ tag: [Android, JodaTime, Joda]
         ...
     </application>
     {% endhighlight %}
+
+- 시간 등록하기
+
+
