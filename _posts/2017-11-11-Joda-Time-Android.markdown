@@ -132,7 +132,7 @@ tag: [Android, JodaTime, Joda]
 
 - 패턴 표
 
-![symbol](./assets/images/jodatime-symbol.png)
+![symbol](/assets/images/jodatime-symbol.png)
 
 <!-- | Symbol | Meaning | Presentation | Example | -->
 <!-- |--------|--------|--------|--------| -->
