@@ -132,28 +132,30 @@ tag: [Android, JodaTime, Joda]
 
 - 패턴 표
 
-| Symbol | Meaning | Presentation | Example |
-|--------|--------|--------|--------|
-| G | era | text | AD |
-| C | century of era | number | 20 |
-| Y | year of era | year | 2017 |
-| x | weekyear | year | 2017 |
-| w | week of weekyear | number | 27 |
-| e | day of week | number | 2 |
-| E | day of week | text | Tuesday; Tue |
-| y | year | year | 2017 |
-| D | day of year | number | 189 |
-| M | month of year | month | July; Jul; 07 |
-| d | day of month | number | 10 |
-| a | halfday of day | text | PM |
-| K | hour of halfday(0~11) | number | 0 |
-| h | clockhour of halfday (1~12) | number | 12 |
-| H | hour of day(0~23) | number | 0 |
-| k | clockhour of day | number | 24 |
-| m | minute of hour | number | 30 |
-| s | second of minute | number | 55 |
-| S | fraction of second | number | 978 |
-| z | time zone | text | Pacific Standard Time; PST |
-| Z | time zond offset/id | zone | -0800; -08:00; America/Los_angeles|
-| T | 날짜/시간 구분자 | text | yyMMddTHHmmss |
+![symbol](./assets/images/jodatime-symbol.png)
+
+<!-- | Symbol | Meaning | Presentation | Example | -->
+<!-- |--------|--------|--------|--------| -->
+<!-- | G | era | text | AD | -->
+<!-- | C | century of era | number | 20 | -->
+<!-- | Y | year of era | year | 2017 | -->
+<!-- | x | weekyear | year | 2017 | -->
+<!-- | w | week of weekyear | number | 27 | -->
+<!-- | e | day of week | number | 2 | -->
+<!-- | E | day of week | text | Tuesday; Tue | -->
+<!-- | y | year | year | 2017 | -->
+<!-- | D | day of year | number | 189 | -->
+<!-- | M | month of year | month | July; Jul; 07 | -->
+<!-- | d | day of month | number | 10 | -->
+<!-- | a | halfday of day | text | PM | -->
+<!-- | K | hour of halfday(0~11) | number | 0 | -->
+<!-- | h | clockhour of halfday (1~12) | number | 12 | -->
+<!-- | H | hour of day(0~23) | number | 0 | -->
+<!-- | k | clockhour of day | number | 24 | -->
+<!-- | m | minute of hour | number | 30 | -->
+<!-- | s | second of minute | number | 55 | -->
+<!-- | S | fraction of second | number | 978 | -->
+<!-- | z | time zone | text | Pacific Standard Time; PST | -->
+<!-- | Z | time zond offset/id | zone | -0800; -08:00; America/Los_angeles| -->
+<!-- | T | 날짜/시간 구분자 | text | yyMMddTHHmmss | -->
 
