@@ -53,33 +53,33 @@ tag: [Android, JodaTime, Joda]
 
 	{% highlight java %}
     //년 가져오기
-    nowTime.year().get()
-    nowTime.get(DateTimeFieldType.year())
+    nowTime.year().get();
+    nowTime.get(DateTimeFieldType.year());
     nowTime.getYear();
 
     //월 가져오기
-    nowTime.monthOfYear().get()
-    nowTime.get(DateTimeFieldType.monthOfYear())
+    nowTime.monthOfYear().get();
+    nowTime.get(DateTimeFieldType.monthOfYear());
     nowTime.getMonthOfYear();
 
     //일 가져오기
-    nowTime.dayOfMonth().get()
-    nowTime.get(DateTimeFieldType.dayOfMonth())
-	nowTime.getDayOfMonth();
+    nowTime.dayOfMonth().get();
+    nowTime.get(DateTimeFieldType.dayOfMonth());
+    nowTime.getDayOfMonth();
 
     //시 가져오기
-    nowTime.hourOfDay().get()
-    nowTime.get(DateTimeFieldType.hourOfDay())
+    nowTime.hourOfDay().get();
+    nowTime.get(DateTimeFieldType.hourOfDay());
     nowTime.getHourOfDay();
 
     //분 가져오기
-    nowTime.minuteOfHour().get()
-    nowTime.get(DateTimeFieldType.minuteOfHour())
+    nowTime.minuteOfHour().get();
+    nowTime.get(DateTimeFieldType.minuteOfHour());
     nowTime.getMinuteOfHour();
 
     //초 가져오기
-    nowTime.secondOfMinute().get()
-    nowTime.get(DateTimeFieldType.secondOfMinute())
+    nowTime.secondOfMinute().get();
+    nowTime.get(DateTimeFieldType.secondOfMinute());
     nowTime.getSecondOfMinute();
 
     {% endhighlight %}
@@ -88,34 +88,34 @@ tag: [Android, JodaTime, Joda]
 
 	{% highlight java %}
     //기원 전 후 가져오기
-    nowTime.era().get()
+    nowTime.era().get();
 
     //세기 가져오기
-    nowTime.centuryOfEra().get()
+    nowTime.centuryOfEra().get();
 
     //세기에 포함된 년 가져오기
-    nowTime.yearOfCentury().get()
+    nowTime.yearOfCentury().get();
 
     //기원 후 년 가져오기
-    nowTime.yearOfEra().get()
+    nowTime.yearOfEra().get();
 
     //년도 가져오기
-    nowTime.weekyear().get()
+    nowTime.weekyear().get();
 
     //해당년도 몇번째 주?
-    nowTime.weekOfWeekyear().get()
+    nowTime.weekOfWeekyear().get();
 
     //그 년에 몇번째 일
-    nowTime.dayOfWeek().get()
+    nowTime.dayOfWeek().get();
 
     //그 주에 몇번째 일
-    nowTime.dayOfYear().get()
+    nowTime.dayOfYear().get();
 
     //그 날의 몇 분째
-    nowTime.minuteOfDay().get()
+    nowTime.minuteOfDay().get();
 
     //그 날의 몇 초째
-    nowTime.secondOfDay().get()
+    nowTime.secondOfDay().get();
 
 	{% endhighlight %}
 
@@ -126,36 +126,10 @@ tag: [Android, JodaTime, Joda]
 ###### ※응용하면 Format으로 년 월 일 시 분 초 (AM/PM) 등도 따로 분리할 수 있음
 
 	{% highlight java %}
-    DateTimeForamt ff = DateTimeFormat.forPattern("yyyy.MM.dd aa hh:mm:ss")
-    now.toString(ff)
+    DateTimeForamt ff = DateTimeFormat.forPattern("yyyy.MM.dd aa hh:mm:ss");
+    now.toString(ff);
     {% endhighlight %}
 
 - 패턴 표
 
 ![symbol](/assets/images/jodatime-symbol.png)
-
-<!-- | Symbol | Meaning | Presentation | Example | -->
-<!-- |--------|--------|--------|--------| -->
-<!-- | G | era | text | AD | -->
-<!-- | C | century of era | number | 20 | -->
-<!-- | Y | year of era | year | 2017 | -->
-<!-- | x | weekyear | year | 2017 | -->
-<!-- | w | week of weekyear | number | 27 | -->
-<!-- | e | day of week | number | 2 | -->
-<!-- | E | day of week | text | Tuesday; Tue | -->
-<!-- | y | year | year | 2017 | -->
-<!-- | D | day of year | number | 189 | -->
-<!-- | M | month of year | month | July; Jul; 07 | -->
-<!-- | d | day of month | number | 10 | -->
-<!-- | a | halfday of day | text | PM | -->
-<!-- | K | hour of halfday(0~11) | number | 0 | -->
-<!-- | h | clockhour of halfday (1~12) | number | 12 | -->
-<!-- | H | hour of day(0~23) | number | 0 | -->
-<!-- | k | clockhour of day | number | 24 | -->
-<!-- | m | minute of hour | number | 30 | -->
-<!-- | s | second of minute | number | 55 | -->
-<!-- | S | fraction of second | number | 978 | -->
-<!-- | z | time zone | text | Pacific Standard Time; PST | -->
-<!-- | Z | time zond offset/id | zone | -0800; -08:00; America/Los_angeles| -->
-<!-- | T | 날짜/시간 구분자 | text | yyMMddTHHmmss | -->
-
