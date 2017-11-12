@@ -87,7 +87,7 @@ tag: [Android, JodaTime, Joda]
 - 기타 시간 가져오기
 
 	{% highlight java %}
-	//기원 전 후 가져오기
+    //기원 전 후 가져오기
     nowTime.era().get()
 
     //세기 가져오기
@@ -120,18 +120,18 @@ tag: [Android, JodaTime, Joda]
 	{% endhighlight %}
 
 - 가져오고 싶은 패턴대로 가져오기
+###### DateTimeFormat에 Pattern을 원하는 입맛대로 등록(패턴은 아래 표 참조)
+###### DateTime 객체의 toString메서드에 Format을 넣어 반환 받기
+###### 원하는 Format의 시간을 구할 수 있음.
+###### ※응용하면 Format으로 년 월 일 시 분 초 (AM/PM) 등도 따로 분리할 수 있음
 
 	{% highlight java %}
     DateTimeForamt ff = DateTimeFormat.forPattern("yyyy.MM.dd aa hh:mm:ss")
     now.toString(ff)
     {% endhighlight %}
 
-    ###### DateTimeFormat에 Pattern을 원하는 입맛대로 등록(패턴은 아래 표 참조)
-    ###### DateTime 객체의 toString메서드에 Format을 넣어 반환 받기
-    ###### 원하는 Format의 시간을 구할 수 있음.
-    ###### ※응용하면 Format으로 년 월 일 시 분 초 (AM/PM) 등도 따로 분리할 수 있음
-
 - 패턴 표
+
 | Symbol | Meaning | Presentation | Example |
 |--------|--------|--------|--------|
 | G | era | text | AD |
