@@ -10,7 +10,7 @@ tag: [Android, JodaTime, Joda]
 
 지난 포스트에 이어 시간 클래스 가져오기1
 
-[JodaTime - 이전 포스트](./2017/11/11/Joda-Time-Android.html)
+[JodaTime - 이전 포스트](/2017/11/11/Joda-Time-Android.html)
 
 - DateTime 클래스 생성
 
