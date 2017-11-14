@@ -1,0 +1,16 @@
+User-agent: *
+Allow: /
+User-agent: *
+Disallow: /_data/
+User-agent: *
+Disallow: /_includes/
+User-agent: *
+Disallow: /_layouts/
+User-agent: *
+Disallow: /_sass/
+User-agent: *
+Disallow: /_assets/
+User-agent: BadBot
+Disallow: /
+
+Sitemap: http://wjddnjs0542.github.io/sitemap.xml
