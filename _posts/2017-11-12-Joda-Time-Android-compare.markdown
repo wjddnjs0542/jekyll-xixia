@@ -7,6 +7,8 @@ description: Android JodaTime 시간 비교하기
 tag: [Android, JodaTime, Joda]
 ---
 # JodaTime 시간 비교하기
+	{% highlight java %}
+    {% endhighlight %}
 
 [JodaTime - 이전 포스트](/2017/11/11/Joda-Time-Android.html)
 
@@ -26,10 +28,15 @@ tag: [Android, JodaTime, Joda]
 - #### 비교 대상 시간 가져오기
 
 	##### 시간 비교하기 위한 클래스 중 Duration 클래스를 설명
+
     ###### 2개의 시간 차이를 비교하기 위해 사용하는 클래스
+
     ###### 생성 방법은 다음과 같이 사용할 수 있다.
+
     ###### ex) new Duration((long)이전시간, (long)현재시간)
+
     ###### ex2) new Duration((ReadableInstant)이전시간, (ReadableInstant)현재시간)
+
     ###### 이전시간, 현재시간을 뒤집어 사용하면 값이 음수로 나올 수 있음.
 
 	{% highlight java %}
@@ -59,6 +66,7 @@ tag: [Android, JodaTime, Joda]
 - #### 다른 방법으로 비교할 시간 가져오기
 
 	##### Duration 객체를 생성하지 않고 Static 함수를 이용해 비교 시간을 가져오는 방법
+
     ###### Years, Months, Days, Hours, Minutes, Seconds 의 Between 메서드를 활용해 가져오는 방법
 
 	{% highlight java %}
