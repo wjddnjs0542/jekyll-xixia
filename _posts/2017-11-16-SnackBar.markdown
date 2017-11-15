@@ -1,0 +1,72 @@
+---
+layout: post
+title: "Android SnackBar 사용방법"
+img: nevada.jpg 
+date: 2017-11-16 01:07:00 +0900
+description: Android SnackBar 사용방법
+tag: [Android, SnackBar]
+---
+# SnackBar 사용방법
+
+    사용자에게 알리고 싶은 간단한 메시지와 한가지의 액션이 있을 때 사용한다.
+    Toast 와 다른점은 Action을 한가지 설정할 수 있다는 것에 있다.
+
+## 사용방법
+
+- 생성 방법은 다음과 같이 두가지 방법으로 생성할 수 있고 SnackBar를 반환한다.
+
+    첫번째 인자는 해당 View에 AddView를 하여 최상위에 보여줄 수 있도록 하기 위해
+    두번째 인자는 SnackBar에 보여줄 Message를
+    세번째 인자는 SnackBar를 유지 시킬 시간이다.
+
+    {% highlight java %}
+    Snackbar.make(View, Int(res), Snackbar.시간);
+    Snackbar.make(View, CharSequence, Snackbar.시간);
+    {% endhighlight  %}
+
+- SnackBar.시간에는 세가지 예약 static 상수가 있다
+
+    {% highlight java %}
+    //무제한(다른 Snackbar가 Show가 되거나 액션이 발생하거나 사용자가 제거하기 전까지)
+    SnackBar.LENGTH_INDEFINITE
+     //약간 길게(2750ms)
+    SnackBar.LENGTH_LONG;
+     //짧게(1500ms)
+    SnackBar.LENGTH_SHORT;
+    {% endhighlight  %}
+
+- Toast와 마찬가지로 SnackBar를 생성한다고 해서 메시지가 보여지는 것이 아니고 show를 해주어야 한다.
+
+    {% highlight java %}
+    SnackBar snackBar = SnackBar.make(View, Message, SnackBar.LENGTH_SHORT);
+    snackBar.show();
+    {% endhighlight  %}
+
+- 변수에 담지 않고 생성 후 바로 Show를 호출하는 방법도 있다.
+
+    {% highlight java %}
+    SnackBar.make(View, Message, SnackBar.LENGTH_SHORT).show();
+    {% endhighlight  %}
+
+- SnackBar 에는 Action을 설정할 수 있다. Action 메서드는 다음과 같이 두가지 방법이 있다.
+
+    첫번째 인자는 클릭할 곳의 이름
+    두번째 인자는 클릭 리스너 이다.
+
+    {% highlight java %}
+    setAction(int(res), OnClickListener);
+    setAction(CharSequence, OnClickListener);
+    {% endhighlight %}
+
+- SnackBar 최종 완성본은 다음과 같다.
+
+    {% highlight java %}
+    SnackBar.make(View, Message, SnackBar.LENGTH_SHORT)
+        .setAction(ActionName, new OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                //SnackBar 클릭 이벤트
+            }
+        })
+        .show();
+    {% endhighlight %}
