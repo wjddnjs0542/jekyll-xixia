@@ -16,26 +16,25 @@ tag: [Android, Toast]
 
     {% highlight java %}
     Toast.makeText(Context, Message, Toast.시간);
-    {% endhighlight %}
+    {% endhighlight  %}
 
     * Toast.시간에는 두가지 예약 static 상수가 있다
 
     {% highlight java %}
     Toast.LENGTH_LONG; //약간 길게
     Toast.LENGTH_SHORT; //짧게
-    {% endhighlight %}
+    {% endhighlight  %}
 
     * Toast를 생성한다고 해서 메시지가 보여지는 것이 아니고 show를 해주어야 한다.
 
     {% highlight java %}
     Toast toast = Toast.makeText(Context, Message, Toast.LENGTH_SHORT);
     toast.show();
-    {% endhighlight %}
-
+    {% endhighlight  %}
 
     * 변수에 담지 않고 생성 후 바로 Show를 호출하는 방법도 있다.
 
     {% highlight java %}
     Toast.makeText(context, Message, Toast.LENGTH_SHORT).show();
-    {% endhighlight %}
+    {% endhighlight  %}
 
