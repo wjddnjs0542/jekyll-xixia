@@ -15,8 +15,8 @@ tag: [Android, SnackBar]
 
 - 생성 방법은 다음과 같이 두가지 방법으로 생성할 수 있고 SnackBar를 반환한다.
 
-    첫번째 인자는 해당 View에 AddView를 하여 최상위에 보여줄 수 있도록 하기 위해
-    두번째 인자는 SnackBar에 보여줄 Message를
+    첫번째 인자는 해당 View에 AddView를 하여 최상위에 보여줄 수 있도록 하기 위해<br>
+    두번째 인자는 SnackBar에 보여줄 Message를<br>
     세번째 인자는 SnackBar를 유지 시킬 시간이다.
 
     {% highlight java %}
@@ -50,7 +50,7 @@ tag: [Android, SnackBar]
 
 - SnackBar 에는 Action을 설정할 수 있다. Action 메서드는 다음과 같이 두가지 방법이 있다.
 
-    첫번째 인자는 클릭할 곳의 이름
+    첫번째 인자는 클릭할 곳의 이름<br>
     두번째 인자는 클릭 리스너 이다.
 
     {% highlight java %}
