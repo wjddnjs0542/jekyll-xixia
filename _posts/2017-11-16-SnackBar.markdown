@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "Android SnackBar 사용방법"
-img: nevada.jpg 
 date: 2017-11-16 01:07:00 +0900
+categories: Android
 description: Android SnackBar 사용방법
 tag: [Android, SnackBar]
 ---

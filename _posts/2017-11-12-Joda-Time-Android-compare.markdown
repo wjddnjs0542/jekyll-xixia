@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "Android JodaTime 시간 비교하기"
-img: nevada.jpg
 date: 2017-11-12 14:14:00 +0900
+categories: Android
 description: Android JodaTime 시간 비교하기
 tag: [Android, JodaTime, Joda]
 ---

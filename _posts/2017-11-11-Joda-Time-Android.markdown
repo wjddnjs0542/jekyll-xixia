@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "Android JodaTime 사용방법"
-img: nevada.jpg 
 date: 2017-11-11 23:28:00 +0900
+categories: Android
 description: Android JodaTime 사용방법
 tag: [Android, JodaTime, Joda]
 ---
