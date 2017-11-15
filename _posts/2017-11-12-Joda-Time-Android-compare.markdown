@@ -7,8 +7,6 @@ description: Android JodaTime 시간 비교하기
 tag: [Android, JodaTime, Joda]
 ---
 # JodaTime 시간 비교하기
-	{% highlight java %}
-    {% endhighlight %}
 
 [JodaTime - 이전 포스트](/2017/11/11/Joda-Time-Android.html)
 
