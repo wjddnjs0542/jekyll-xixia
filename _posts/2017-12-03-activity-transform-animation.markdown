@@ -15,19 +15,19 @@ tag: [Android, Animation]
 
 ### Activity 시작 애니메이션 설정
 
-1. 첫번째 방법 startActivity와 동시에 함수 호출
+#### 첫번째 방법 startActivity와 동시에 함수 호출
 
 {% highlight java %}
  startActivity(new Intent(NowActivity.this, NextActivity.class));
  overridePendingTransition(NextActivity 등장 anim.xml, NowActivity 사라짐 anim.xml);
 {% endhighlight %}
 
-2. 두번째 방법 NextActivity의 OnCreate에 선언부에 함수 호출
+#### 두번째 방법 NextActivity의 OnCreate에 선언부에 함수 호출
 
 {% highlight java %}
 @Override
 protected void onCreate(Bundle savedInstanceState){
-	super.onCreate(saveInstanceState);
+    super.onCreate(saveInstanceState);
     overridePendingTransition(NextActivity 등장 anim.xml, NowActivity 사라짐 anim.xml);
 }
 {% endhighlight %}
@@ -40,7 +40,7 @@ protected void onCreate(Bundle savedInstanceState){
 {% highlight java %}
 @Override
 public void finish(){
-	super.finish();
+    super.finish();
     overridePendingTransition(NowActivity 등장 anim.xml, NextActivity 사라질 anim.xml);
 }
 {% endhighlight %}
