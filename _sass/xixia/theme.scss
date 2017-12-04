@@ -8,6 +8,16 @@ body {
     height:100%;
 }
 
+table {
+    border-collapse: collapse;
+    background: #ececec;
+}
+
+tr, td {
+    border: 1px solid black;
+    text-align: center;
+}
+
 .wrap {
     position:relative;
     min-height:100%;
