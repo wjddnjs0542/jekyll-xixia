@@ -10,7 +10,7 @@ tag: [Android, Animation, XML]
 
 ### 태그 정리
 
-#### Translate 태그(이동 애니메이션)
+- # Translate 태그(이동 애니메이션)
 
     |속성명|설명|값|
     |:--|:--|:--|
