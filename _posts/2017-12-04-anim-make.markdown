@@ -10,67 +10,67 @@ tag: [Android, Animation, XML]
 
 ### 태그 정리
 
-- Translate 태그(이동 애니메이션)
+#### Translate 태그(이동 애니메이션)
 
-|속성명|설명|값|
-|:--|:--|:--|
-|fromXDelta|애니메이션 X 시작 위치|정수 또는 %|
-|toXDelta|애니메이션 X 끝 위치|정수 또는 %|
-|fromYDelta|애니메이션 Y 시작 위치|정수 또는 %|
-|toYDelta|애니메이션 Y 끝 위치|정수 또는 %|
+    |속성명|설명|값|
+    |:--|:--|:--|
+    |fromXDelta|애니메이션 X 시작 위치|정수 또는 %|
+    |toXDelta|애니메이션 X 끝 위치|정수 또는 %|
+    |fromYDelta|애니메이션 Y 시작 위치|정수 또는 %|
+    |toYDelta|애니메이션 Y 끝 위치|정수 또는 %|
 
 - Alpha 태그(투명도 애니메이션)
 
-|속성명|설명|값|
-|:--|:--|:--|
-|fromAlpha|애니메이션 알파(투명도) 시작 값|실수 또는 %|
-|toAlpha|애니메이션 알파(투명도) 끝 값|실수 또는 %|
+    |속성명|설명|값|
+    |:--|:--|:--|
+    |fromAlpha|애니메이션 알파(투명도) 시작 값|실수 또는 %|
+    |toAlpha|애니메이션 알파(투명도) 끝 값|실수 또는 %|
 
 - Scale 태그(확대축소 애니메이션)
 
-|속성명|설명|값|
-|:--|:--|:--|
-|fromXScale|확대축소 X 시작 값|실수 또는 %|
-|toXScale|확대축소 X 끝 값|실수 또는 %|
-|fromYScale|확대축소 Y 시작 값|실수 또는 %|
-|toYScale|확대축소 Y 끝 값|실수 또는 %|
-|pivotX|X 좌표의 중심점|정수 또는 %|
-|pivotY|Y 좌표의 중심점|정수 또는 %|
+    |속성명|설명|값|
+    |:--|:--|:--|
+    |fromXScale|확대축소 X 시작 값|실수 또는 %|
+    |toXScale|확대축소 X 끝 값|실수 또는 %|
+    |fromYScale|확대축소 Y 시작 값|실수 또는 %|
+    |toYScale|확대축소 Y 끝 값|실수 또는 %|
+    |pivotX|X 좌표의 중심점|정수 또는 %|
+    |pivotY|Y 좌표의 중심점|정수 또는 %|
 
 - Rotate 태그(회전 애니메이션)
 
-|속성명|설명|값|
-|:--|:--|:--|
-|fromDegrees|회전 시작 각도|정수|
-|toDegrees|회전 끝 각도|정수|
-|pivotX|X 좌표 중심점|정수 또는 %|
-|pivotY|Y 좌표 중심점|정수 또는 %|
+    |속성명|설명|값|
+    |:--|:--|:--|
+    |fromDegrees|회전 시작 각도|정수|
+    |toDegrees|회전 끝 각도|정수|
+    |pivotX|X 좌표 중심점|정수 또는 %|
+    |pivotY|Y 좌표 중심점|정수 또는 %|
 
 - 그 밖의 공통 태그(애니메이션 설정)
 
-|속성명|설명|값|
-|:--|:--|:--|
-|duration|효과 시간(밀리초 단위)|정수|
-|startOfSet|효과 시작 시간|정수|
-|fillAfter|애니메이션 종료 후 애니메이션 변형 적용 여부(True : 적용)|boolean|
-|fillBefore|애니메이션 시작 전 애니메이션 변형 적용 여부(True : 적용)|boolean|
-|interpolator|애니메이션 이동 정의(하단에 종류 정의)|interpolator|
-|repeatCount|애니메이션 1회 완료 후 반복 횟수(ex repeatCount 1 적용시 애니메이션 2회 보여짐)|정수 또는 infinite|
-|repeatMode|애니메이션 동작 완료 후 0보다 크거나 무한대일때 동작 정의|restart 또는 reverse|
+    |속성명|설명|값|
+    |:--|:--|:--|
+    |duration|효과 시간(밀리초 단위)|정수|
+    |startOfSet|효과 시작 시간|정수|
+    |fillAfter|애니메이션 종료 후 애니메이션 변형 적용 여부(True : 적용)|boolean|
+    |fillBefore|애니메이션 시작 전 애니메이션 변형 적용 여부(True : 적용)|boolean|
+    |interpolator|애니메이션 이동 정의(하단에 종류 정의)|interpolator|
+    |repeatCount|애니메이션 1회 완료 후 반복 횟수(ex repeatCount 1 적용시 애니메이션 2회 보여짐)|정수 또는 infinite|
+    |repeatMode|애니메이션 동작 완료 후 0보다 크거나 무한대일때 동작 정의|restart 또는 reverse|
 
 - Interpolator 속성 정리
 
-|속성명|설명|
-|:--|:--|
-|@android:anim/accelerate_decelerate_interpolator|점점 빠르게 동작하다가 점점 천천히 동작|
-|@android:anim/accelerate_interpolator|점점 빠르게 동작|
-|@android:anim/anticipate_interpolator|시작할 때 반대 방향으로 동작을 한 후에 본래의 방향으로 동작|
-|@android:anim/anticipate_overshoot_interpolator|반대 방향으로 동작을 한 후 종료 지점을 지나갔다가 종료 지점으로 돌아오는 방식|
-|@android:anim/bounce_interpolator|애니메이션이 종료될 때 튕기면서 스프링 효과가 나타남|
-|@android:anim/cycle_interpolator|애니메이션 동작 후 반대방향으로 한번 더 동작|
-|@android:anim/decelerate_interpolator|점점 느리게 동작|
-|@android:anim/linear_interpolator|일정하게 동작|
-|@android:anim/overshoot_interpolator|종료 지점을 지나친 후 다시 돌아옴|
+    |속성명|설명|
+    |:--|:--|
+    |@android:anim/accelerate_decelerate_interpolator|점점 빠르게 동작하다가 점점 천천히 동작|
+    |@android:anim/accelerate_interpolator|점점 빠르게 동작|
+    |@android:anim/anticipate_interpolator|시작할 때 반대 방향으로 동작을 한 후에 본래의 방향으로 동작|
+    |@android:anim/anticipate_overshoot_interpolator|반대 방향으로 동작을 한 후 종료 지점을 지나갔다가 종료 지점으로 돌아오는 방식|
+    |@android:anim/bounce_interpolator|애니메이션이 종료될 때 튕기면서 스프링 효과가 나타남|
+    |@android:anim/cycle_interpolator|애니메이션 동작 후 반대방향으로 한번 더 동작|
+    |@android:anim/decelerate_interpolator|점점 느리게 동작|
+    |@android:anim/linear_interpolator|일정하게 동작|
+    |@android:anim/overshoot_interpolator|종료 지점을 지나친 후 다시 돌아옴|
 
 ### 애니메이션 만들기
 
