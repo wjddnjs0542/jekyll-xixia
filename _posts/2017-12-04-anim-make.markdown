@@ -10,7 +10,7 @@ tag: [Android, Animation, XML]
 
 ### 태그 정리
 
-- # Translate 태그(이동 애니메이션)
+- #### Translate 태그(이동 애니메이션)
 
     |속성명|설명|값|
     |:--|:--|:--|
@@ -19,14 +19,14 @@ tag: [Android, Animation, XML]
     |fromYDelta|애니메이션 Y 시작 위치|정수 또는 %|
     |toYDelta|애니메이션 Y 끝 위치|정수 또는 %|
 
-- Alpha 태그(투명도 애니메이션)
+- #### Alpha 태그(투명도 애니메이션)
 
     |속성명|설명|값|
     |:--|:--|:--|
     |fromAlpha|애니메이션 알파(투명도) 시작 값|실수 또는 %|
     |toAlpha|애니메이션 알파(투명도) 끝 값|실수 또는 %|
 
-- Scale 태그(확대축소 애니메이션)
+- #### Scale 태그(확대축소 애니메이션)
 
     |속성명|설명|값|
     |:--|:--|:--|
@@ -37,7 +37,7 @@ tag: [Android, Animation, XML]
     |pivotX|X 좌표의 중심점|정수 또는 %|
     |pivotY|Y 좌표의 중심점|정수 또는 %|
 
-- Rotate 태그(회전 애니메이션)
+- #### Rotate 태그(회전 애니메이션)
 
     |속성명|설명|값|
     |:--|:--|:--|
@@ -46,7 +46,7 @@ tag: [Android, Animation, XML]
     |pivotX|X 좌표 중심점|정수 또는 %|
     |pivotY|Y 좌표 중심점|정수 또는 %|
 
-- 그 밖의 공통 태그(애니메이션 설정)
+- #### 그 밖의 공통 태그(애니메이션 설정)
 
     |속성명|설명|값|
     |:--|:--|:--|
@@ -58,7 +58,7 @@ tag: [Android, Animation, XML]
     |repeatCount|애니메이션 1회 완료 후 반복 횟수(ex repeatCount 1 적용시 애니메이션 2회 보여짐)|정수 또는 infinite|
     |repeatMode|애니메이션 동작 완료 후 0보다 크거나 무한대일때 동작 정의|restart 또는 reverse|
 
-- Interpolator 속성 정리
+- #### Interpolator 속성 정리
 
     |속성명|설명|
     |:--|:--|
