@@ -51,13 +51,16 @@ Intent를 이용해 Activity를 이동할때 이전 Activity가 Stack에 쌓이�
 	동일한 Activity가 연속적으로 사용되어야 적용되며
     연속적으로 사용되지 않는다면 계속 쌓인다.
 
+    **동일하지 않은 Activity** 호출시
+
 	|--|--|--|
 	|:--|:--|:--|
 	|-|-|B|
 	|A|B 호출->|A|
 	|B|-|B|
 	|A|-|A|
-　
+
+    **동일한 Activity** 호출시
 
 	|--|--|--|
 	|:--|:--|:--|
@@ -70,13 +73,16 @@ Intent를 이용해 Activity를 이동할때 이전 Activity가 Stack에 쌓이�
 
 	기존에 Stack에 쌓여있던 Acivity의 동일한 Activity가 호출 되면 해당 Activity 상위에 쌓여있는 Activity를 제거하며, RootActivity는 제거되지 않는다.
 
+    **동일한 Activity** 호출시
+
 	|--|--|--|
 	|:--|:--|:--|
 	|-|-|-|
 	|B|Flag적용->|-|
 	|B|-|B|
 	|A|-|A|
-　
+
+	**동일하지 않은 Activity** 호출시
 
 	|--|--|--|
 	|:--|:--|:--|
@@ -84,7 +90,8 @@ Intent를 이용해 Activity를 이동할때 이전 Activity가 Stack에 쌓이�
 	|A|Flag적용->|-|
 	|B|-|-|
 	|A|-|A|
-　
+
+	**다른 위치의 Activity** 호출시
 
 	|--|--|--|
 	|:--|:--|:--|
